@@ -7,8 +7,8 @@
 </p>
 
 <h3 align="center">
-  Deploy da Aplicação com Git Pages:
-  <a href="" target="__blank">ACESSE AQUI </p>
+  Deploy da Aplicação com Replit:
+  <a href="https://netflix-clone.diegolramos.repl.co" target="__blank">ACESSE AQUI </p>
 </h3>
 
 
