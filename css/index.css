@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --red: #E50914;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: gray;
+}
+
+.container-main{
+	background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url('/assets/img/background.jpg');
+	background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-main header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.container-main header img{
+    width: 140px;
+    height: 50px;
+}
+
+.container-main header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-main header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container-main header nav ul li{
+    width: 100%;
+    list-style: none;
+}
+
+.container-main header nav ul li a{
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 4px;
+}
+
+.container-main header nav ul li select{
+    margin-right: 40px;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid var(--white);
+    color: var(--white);
+    border-radius: 2px;
+}
+
+.container-main header nav ul li select option{
+    background-color: var(--gray);
+}
+
+.content-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 70%;
+}
+
+.title-main{
+    color: var(--white);
+    font-size: 24px;
+    max-width: 640px;
+}
+
+.title-main h2{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.content-main h3{
+    margin: 30px auto 5px auto;
+    color: var(--white);
+    font-size: 18px;
+}
+
+form{
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+}
+
+form input{
+    height: 60px;
+    width: 450px;
+    margin: 20px -4px auto auto;
+    font-size: 24px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+form button{
+    height: 60px;
+    width: 185px;
+    font-size: 24px;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.devices,
+.faq{
+    background-color: var(--black);
+    border-bottom: 10px solid #222;
+}
+
+.device{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid #222;
+    color: var(--white);
+    padding: 40px;
+}
+
+.device-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    padding: 50px;
+}
+
+.device-title h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.device-title h2{
+    font-size: 24px;
+    font-weight: 200;
+    width: 90%;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.container-faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    margin-bottom: 100px;
+}
+
+.container-faq h2{
+    margin: 70px 0 50px 0;
+    font-size: 50px;
+}
+
+.container-faq ul{
+    margin-bottom: 50px;
+}
+
+.container-faq ul li{
+    display: flex;
+    justify-content: space-between;
+    background-color: #303030;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 25px;
+    width: 815px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.container-faq ul li img{
+    height: 26px;
+}
+
+footer{
+    background-color: var(--black);
+    color: #757575;
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 150px;
+}
+
+.container-footer p:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.container-footer p:nth-child(4){
+    font-size: 12px;
+}
+
+footer .listas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 40px;
+    width: 90%;
+    font-size: 12px;
+}
+
+footer .listas ul li{
+    list-style: none;
+}
+
+footer .listas ul li a{
+    text-decoration: none;
+    color: #757575;
+}
+
+.container-footer select{
+    height: 50px;
+    width: 150px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid #757575;
+    color: #757575;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.container-footer select option{
+    background-color: var(--black);
+}
+
+@media (max-width: 450px){
+    .container-main{
+        background-position: center;
+        height: 100vh;
+    }
+
+    .container-main header {
+        padding: 20px 15px;
+    }
+
+    .container-main header img {
+        width: 100px;
+        height: 35px;
+    }
+
+    .container-main header nav ul li select {
+        margin-right: 20px;
+    }
+
+    .content-main {
+        justify-content: end;
+        height: 80%;
+    }
+
+    .content-main h3 {
+        font-size: 17px;
+        text-align: center;
+        width: 60%;
+    }
+
+    .title-main h1 {
+        font-size: 32px;
+    }
+
+    .title-main h2 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    form input {
+        height: 45px;
+        width: 90%;
+        margin: 20px 0px 10px auto;
+        font-size: 18px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+
+    form button {
+        height: 45px;
+        width: 140px;
+        font-size: 18px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+
+    .device{
+        flex-direction: column;
+    }
+
+    .device-title {
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .device-title h1 {
+        font-size: 28px;
+    }
+
+    .device-title h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .images{
+        width: 100%;
+    }
+    
+    .tv-device{
+        width: 360px;
+        margin-top: 20px;
+    }
+
+    .device:nth-child(2),
+    .device:nth-child(4){
+        flex-direction: column-reverse;
+    }
+
+    .mobile-device{
+        width: 290px;
+        margin-top: 20px;
+    }
+
+    .pc-device{
+        width: 290px;
+        margin-top: 20px;
+    }
+
+    .container-faq h2 {
+        font-size: 28px;
+    }
+
+    .container-faq ul {
+        width: 100%;
+    }
+
+    .container-faq ul li{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .container-faq ul li img {
+        height: 18px;
+    }
+
+    .container-faq h3 {
+        font-size: 17px;
+        text-align: center;
+        font-weight: 100;
+        width: 60%;
+    }
+
+    .container-footer {
+        padding: 38px 38px;
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 451px) and (max-width: 875px){ 
+    .content-main {
+        height: 80%;
+    }
+
+    .content-main h3 {
+        width: 60%;
+    }
+
+    .title-main h1 {
+        font-size: 34px;
+    }
+
+    .title-main h2 {
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+    form input {
+        height: 45px;
+        width: 80%;
+        margin: 20px 0px 10px auto;
+        font-size: 18px;
+    }
+
+    form button {
+        height: 45px;
+        width: 140px;
+        font-size: 18px;
+    }
+
+    .device{
+        flex-direction: column;
+    }
+    
+    .device-title {
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 80%;
+        padding: 0;
+    }
+    
+    .device-title h1 {
+        font-size: 30px;
+    }
+    
+    .device-title h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .images{
+        width: 80%;
+    }
+    
+    .tv-device{
+        width: 430px;
+        margin-top: 20px;
+    }
+    
+    .device:nth-child(2),
+    .device:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    
+    .mobile-device{
+        width: 290px;
+        margin-top: 20px;
+    }
+    
+    .pc-device{
+        width: 390px;
+        margin-top: 20px;
+    }
+    
+    .container-faq h2 {
+        font-size: 28px;
+    }
+    
+    .container-faq ul {
+        width: 80%;
+    }
+
+    .container-faq ul li{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .container-faq ul li img {
+        height: 18px;
+    }
+
+    .container-faq h3 {
+        font-size: 17px;
+        text-align: center;
+        font-weight: 100;
+        width: 60%;
+    }
+
+    .container-faq form{
+        width: 80%;
+    }
+    
+    .container-faq form input {
+        height: 45px;
+        width: 80%;
+        margin: 20px 0px 10px auto;
+        font-size: 18px;
+    }
+
+    .container-faq form button {
+        height: 45px;
+        width: 140px;
+        font-size: 18px;
+    }
+
+    .container-footer {
+        padding: 38px 38px;
+        font-size: 16px;
+    }
+
+    .container-footer .listas {
+        font-size: 14px;
+    }
+}

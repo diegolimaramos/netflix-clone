@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --red: #E50914;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 10px 30px;
+    width: 100%;
+    background-color: var(--black);
+    z-index: 2;
+}
+
+header img{
+    width: 100px;
+    height: 40px;
+}
+
+.menu-nav{
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav li a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.menu-nav li a:hover{
+    text-decoration: none;
+    color: #aaa;
+    transition: .2s;
+}
+
+.submenu{
+    position: absolute;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 180px;
+    height: 220px;
+    list-style: none;
+    background-color: var(--black);
+}
+
+.menu-nav > li:nth-child(1){
+    display: none;
+}
+
+.menu-nav > li .submenu{
+    display: none;
+}
+
+.container{
+    background-image: url('/assets/img/goku2.gif');
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.movie-main{
+    padding: 30px;
+    color: black;
+    color: white;
+}
+
+.movie-main img{
+    width: 350px;
+    height: 200px;
+}
+
+.movie-main p{
+    margin-top: -50px;
+    width: 35%;
+    font-weight: bold;
+}
+
+.buttons{
+    padding: 0 30px;
+}
+
+.btn{
+    border:none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.btn.info{
+    background-color: #b3b3b3;
+    color: var(--white);
+}
+
+.btn.play:hover,
+.btn.info:hover{
+    opacity: 0.7;
+}
+
+.btn i{
+    margin-right: 8px;
+}
+
+.carousel-movies {
+    padding: 30px;
+}
+
+.container-movies{
+    height: 50%;
+    font-size: 14px;   
+    margin-bottom: 20px;
+}
+
+.container-movies h2{
+    margin-bottom: 10px;
+}
+
+.box-movie{
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.box-movie:hover{
+    opacity: .5;
+}
+
+.box-movie-original{
+    height: 100%;
+}      
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #757575;
+    height: 50vh;
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    padding: 0 30px;
+    width: 80%;
+    height: 70%;
+}
+
+.container-footer a{
+    height: 30px;
+    width: 110px;
+    padding: 5px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid #757575;
+    color: #757575;
+    border-radius: 2px;
+}
+
+.container-footer a:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
+.midias img{
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.listas{
+    display: flex;
+    flex-wrap: wrap;
+    height: 40%;
+    font-size: 12px;
+} 
+
+.listas li{
+    margin-top: 20px;
+    margin-right: 30px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.listas li:hover{
+    text-decoration: underline;
+}
+
+
+@media(max-width: 450px){
+    .container {
+        height: 70vh;
+    }
+
+    .movie-main img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .movie-main p {
+        margin-top: -35px;
+        width: 80%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .btn {
+        padding: 15px 15px;
+        margin-bottom: 20px;
+    }
+
+    .container-movies h2 {
+        font-size: 18px;
+    }
+
+    .container-footer {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .listas {
+        justify-content: space-between;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media(max-width: 885px){
+    .menu-nav > li{
+        display: none;
+    }
+
+    .menu-nav > li:nth-child(1){
+        display: block;
+    }
+
+    .menu-nav > li:hover > .submenu{
+        display: flex;
+    }
+    
+}
