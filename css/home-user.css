@@ -19,7 +19,7 @@ body{
 header{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
@@ -27,6 +27,10 @@ header{
     width: 100%;
     background-color: var(--black);
     z-index: 2;
+}
+
+header nav{
+    margin-right: auto;
 }
 
 header img{
@@ -70,6 +74,27 @@ header img{
 
 .menu-nav > li .submenu{
     display: none;
+}
+
+.menu-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 250px;
+}
+
+.menu-icons li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+}
+
+.icons{
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
 }
 
 .container{
@@ -220,6 +245,22 @@ footer{
 
 
 @media(max-width: 450px){
+
+    header{
+        justify-content: space-evenly;
+    }
+    
+    .menu-icons{
+        width: auto;
+    }
+
+    .menu-icons > li:nth-child(1),
+    .menu-icons > li:nth-child(2),
+    .menu-icons > li:nth-child(3),
+    .menu-icons > li:nth-child(4){
+        display: none;
+    }
+    
     .container {
         height: 70vh;
     }
