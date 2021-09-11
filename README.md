@@ -8,7 +8,7 @@
 
 <h3 align="center">
   Deploy da Aplicação com Vercel:
-  <a href="https://netflix-clone-n6lx8zy72-diegolramos.vercel.app/" target="_blank">ACESSE AQUI </p>
+  <a href="https://netflix-clone-clulrd4ip-diegolramos.vercel.app/" target="_blank">ACESSE AQUI </p>
 </h3>
 
 
